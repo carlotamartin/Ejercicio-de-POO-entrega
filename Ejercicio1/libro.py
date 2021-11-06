@@ -1,14 +1,6 @@
 '''
 Ejercicio 1
 Escriba una clase que permita describir un libro y situar los valores asociados. Dar un ejemplo de uso en Python.
-Respuesta
-En primer lugar, se listan las propiedades o atributos de un libro:
-Título, Autor, Editor, Número de páginas,Año
-A continuación, se listan los métodos que permiten gestionar estas propiedades:
-1. Modificar cada uno de los atributos anteriores.
-2. Acceder a los atributos.
-3. Crear un nuevo objeto libro a través de uno o varios constructores.
-Un constructor por defecto va a inicializar las variables, otro tomará todos los valores. A continuación se implementan algunos métodos.
 '''
 
 class libro:
