@@ -1,9 +1,9 @@
-import datetime
+from datetime import date
 
 class Cuenta_Bancaria:
     ID = 0
     titular= ''
-    fecha_apertura= datetime.datetime
+    fecha_apertura= date.datetime
     num_cuenta= 0
     saldo = 0
 
@@ -61,7 +61,7 @@ class Cuenta_Bancaria:
         Cuenta_Bancaria.setsaldo(dinero_final)
 
     #En este metodo el primero argumento es el dinero que quiere transfereir la cuenta 1 (segundo argumento) a la cuenta 2 (tercer argumento)
-    def transferir_dinero (self, cantidad, cuenta):
+    def transferir_dinero (self, cantidad, cuenta ):
         if int(cantidad) > Cuenta_Bancaria.getsaldo():
             print('No se puede retirar mas dinero del que tienes')
         else:
