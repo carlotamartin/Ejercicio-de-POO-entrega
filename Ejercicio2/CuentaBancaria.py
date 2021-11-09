@@ -13,7 +13,7 @@ class Cuenta_Bancaria:
         self._titular = titular
         self._fecha_apertura = fecha_apertura
         self._num_cuenta = num_cuenta
-        self.saldo = saldo
+        self._saldo = saldo
 
 
     #Creamos los metodos get y set
@@ -24,7 +24,7 @@ class Cuenta_Bancaria:
         self._ID = ID
 
     def gettitular(self):
-            return self._titular
+        return self._titular
 
     def settitular(self, titular):
         self._titular = titular
@@ -61,7 +61,21 @@ class Cuenta_Bancaria:
         Cuenta_Bancaria.setsaldo(dinero_final)
 
     #En este metodo el primero argumento es el dinero que quiere transfereir la cuenta 1 (segundo argumento) a la cuenta 2 (tercer argumento)
-    def transferir_dinero (self, cantidad, cuenta ):
+    def pedir_datos():
+
+        ID= input('Escribe el ID')
+        try:
+            ID = int(ID)
+        except ValueError:
+            print('Error de tipo')
+
+
+
+
+
+
+
+    def transferir_dinero (self, cantidad,  cuenta1 ):
         if int(cantidad) > Cuenta_Bancaria.getsaldo():
             print('No se puede retirar mas dinero del que tienes')
         else:
