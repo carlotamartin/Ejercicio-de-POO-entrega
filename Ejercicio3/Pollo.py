@@ -1,5 +1,5 @@
-from Oviparo import Oviparo
+from Animal import Animal
 
-class Pollo (Viviparo):
+class Pollo (Animal):
     def __init__ (self):
         pass
