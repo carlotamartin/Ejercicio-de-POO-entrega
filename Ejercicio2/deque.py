@@ -1,8 +1,8 @@
 from collections import deque
 
 class Linked_list(deque):
-    def __init__(self):
-        self.cabecera = None
+    def __init__(self, deque):
+        self.deque = deque
 
     def insertarultimo(self, elemento):
         return deque.append(elemento)
@@ -13,7 +13,7 @@ class Linked_list(deque):
     def eliminarprimero(self):
         return deque.popleft()
 
-    def eliminarultimo (self, elemento):
+    def eliminarultimo (self):
         return deque.pop()
 
     def eliminar (self, elemento):
