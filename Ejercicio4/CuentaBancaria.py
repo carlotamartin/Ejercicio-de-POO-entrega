@@ -1,9 +1,9 @@
-from datetime import date
+import datetime
 
 class Cuenta_Bancaria:
     ID = 0
     titular= ''
-    fecha_apertura= date.datetime
+    fecha_apertura= datetime.date
     num_cuenta= 0
     saldo = 0
 
@@ -11,7 +11,7 @@ class Cuenta_Bancaria:
     def __init__ (self, ID, titular, fecha_apertura, num_cuenta, saldo):
         self._ID= ID
         self._titular = titular
-        self._fecha_apertura = fecha_apertura
+        self._fecha_apertura = fecha_apertura.datetime
         self._num_cuenta = num_cuenta
         self._saldo = saldo
 
@@ -42,7 +42,7 @@ class Cuenta_Bancaria:
         self._num_cuenta = num_cuenta
 
     def getsaldo(self):
-        return self._saldo
+        return int(self._saldo)
 
     def setsaldo(self, saldo):
         self._saldo = saldo
@@ -69,18 +69,13 @@ class Cuenta_Bancaria:
         except ValueError:
             print('Error de tipo')
 
-
-
-
-
-
-
+    #La cuenta 1 es a la cuenta a la que se le tiene que transferir el dinero
     def transferir_dinero (self, cantidad,  cuenta1 ):
         if int(cantidad) > Cuenta_Bancaria.getsaldo():
             print('No se puede retirar mas dinero del que tienes')
         else:
             Cuenta_Bancaria.retirar_dinero(cantidad)
-            cuenta.ingresar_dinero(cantidad)
+            cuenta1.ingresar_dinero(cantidad)
 
 
 
