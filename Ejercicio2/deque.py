@@ -5,11 +5,34 @@ class Linked_list(deque):
         self.cabecera = None
 
     def insertarultimo(self, elemento):
-        deque.append(elemento)
-    
+        return deque.append(elemento)
+
     def insertarprimero (self, elemento):
-        deque.appendleft(elemento)
-    def eliminarprimero(self, elemento):
-        deque.popleft(elemento)
+        return deque.appendleft(elemento)
+
+    def eliminarprimero(self):
+        return deque.popleft()
+
+    def eliminarultimo (self, elemento):
+        return deque.pop()
+
     def eliminar (self, elemento):
-        deque.
+        return deque.remove(elemento)
+
+    def esta_vacio():
+        resultado = False
+        if deque.__len__ == 0:
+            resultado = True
+        return resultado
+
+    def imprimir_izq_a_drch ():
+        return print(deque)
+
+    def imprimir_drch_a_izq ():
+        deque.reverse()
+        return print(deque)
+
+    def eliminar_todo ():
+        return deque.clear()
+
+

@@ -1,6 +1,7 @@
-import LinkedList
+from deque import Linked_list
 
-lista = LinkedList(["a", "b", "c", "d", "e"])
 
-for Nodo in lista:
-    print (Nodo)
+
+lista = Linked_list(["a", "b", "c", "d", "e"])
+lista.eliminarprimero()
+lista
