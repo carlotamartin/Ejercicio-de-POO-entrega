@@ -1,7 +1,7 @@
 from deque import Linked_list
 
 
-
-lista = Linked_list(["a", "b", "c", "d", "e"])
+array = ["a", "b", "c", "d", "e"]
+lista = Linked_list(array)
 lista.eliminarprimero()
-lista
+lista.imprimir_izq_a_drch

@@ -1,8 +1,8 @@
 import Nodo
 class LinkedList:
     #La cabecera es un nodo que no se utiliza
-    def __init__(self):
-        self.cabecera = None
+    def __init__(self, deque):
+        self.deque = deque
 
     #Método para añadir al principio de la lista un nodo
     def insertarPrimero (self, Nodo):
