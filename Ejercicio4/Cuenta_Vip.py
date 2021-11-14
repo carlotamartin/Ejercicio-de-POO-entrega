@@ -2,6 +2,7 @@ from CuentaBancaria import Cuenta_Bancaria
 
 
 class Cuenta_Vip(Cuenta_Bancaria):
+
     def pedirsaldomin():
         saldo_min = int(input('Escribe el saldo minimo: '))
         return saldo_min
