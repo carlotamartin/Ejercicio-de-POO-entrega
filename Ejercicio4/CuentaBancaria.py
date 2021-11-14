@@ -11,7 +11,7 @@ class Cuenta_Bancaria:
     def __init__ (self, ID, titular, fecha_apertura, num_cuenta, saldo):
         self._ID= ID
         self._titular = titular
-        self._fecha_apertura = fecha_apertura.datetime
+        self._fecha_apertura = fecha_apertura.datetime()
         self._num_cuenta = num_cuenta
         self._saldo = saldo
 
